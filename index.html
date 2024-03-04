@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem's Type Racer</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="game-section">
+        <div class="game-wrapper">
+          <div class="gamebox">
+            <p id="loaded-text"></p>
+          </div>
+          <div class="stats">
+            <p>Elapsed Time: <span id="timer">0.0</span></p>
+            <p>Words Completed: <span id="words-completed">0</span></p>
+            <p>WPM: <span id="wpm">0</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <div class="video-wrapper">
+          <video controls id="video" type="video/mp4" src=""></video>
+          <canvas width="16" height="9" id="js-canvas"></canvas>
+        </div>
+      </section>
+
+      <section class="filters">
+        <div class="filter-wrapper">
+          <div id="controls">
+            <h2>Filter Prompts</h2>
+            <p>Choose different lengths, catagories and specific titles.</p>
+            <div id="lengths">
+              <label>Length</label>
+              <button class="toggle" id="short">Short</button
+              ><button class="toggle" id="medium">Medium</button
+              ><button class="toggle" id="long">Long</button>
+            </div>
+            <div id="categories">
+              <label>Catagory</label>
+              <button class="toggle" id="show-button">TV</button
+              ><button class="toggle" id="anime-button">Anime</button
+              ><button class="toggle" id="movie-button">Movie</button
+              ><button class="toggle" id="game-button">Game</button>
+            </div>
+            <div id="titles">
+              <label>Title</label>
+              <button class="toggle temp">Bates motel</button
+              ><button class="toggle" id="">Nightcrawler</button
+              ><button class="toggle" id="movie-button">Sonny Boy</button
+              ><button class="toggle" id="game-button">Fight Club</button>
+            </div>
+          </div>
+
+          <div id="cuurently-playing">
+            <p>Now Playing:</p>
+            <img src="" alt="poster" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Developed by Adere Soyinka</p>
+    </footer>
+  </body>
+</html>
